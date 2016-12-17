@@ -14,6 +14,12 @@ Feel free to participate and create a pull request if you need Mac support soone
 npm i napi-sample-app
 ```
 
+## Usage
+After installation simply start the app with
+```
+npm start
+```
+
 ### License
 
 See LICENSE file.
