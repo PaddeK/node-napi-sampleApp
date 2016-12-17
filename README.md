@@ -11,7 +11,7 @@ Feel free to participate and create a pull request if you need Mac support soone
   
 ## Install
 ```
-npm i napi-sampleapp
+npm i napi-sample-app
 ```
 
 ### License
