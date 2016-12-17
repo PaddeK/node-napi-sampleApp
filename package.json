@@ -1,0 +1,51 @@
+{
+    "name": "napi-sample-app",
+    "description": "Nymi API Sample App",
+    "version": "0.1.0",
+    "license": "MIT",
+    "keywords": ["napi", "nymi", "nymi api", "napi sample", "napi sample app"],
+    "dependencies": {
+        "napi-bindings": "^0.1.3"
+    },
+    "repository" : {
+        "type" : "git",
+        "url" : "https://github.com/PaddeK/node-napi-sample-app.git"
+    },
+    "engines" : {
+        "node" : ">=6.9.1"
+    },
+    "scripts" : {
+        "start" : "node src/SampleAppMain.js"
+    },
+    "main": "src/SampleAppMain",
+    "jshintConfig": {
+        "bitwise": false,
+        "camelcase": true,
+        "curly": true,
+        "eqeqeq": true,
+        "forin": true,
+        "immed": true,
+        "latedef": true,
+        "newcap": true,
+        "noarg": true,
+        "noempty": true,
+        "nonew": true,
+        "quotmark": "single",
+        "undef": true,
+        "unused": true,
+        "strict": true,
+        "maxlen": 120,
+        "boss": true,
+        "globalstrict": true,
+        "laxcomma": true,
+        "regexp": true,
+        "indent": 4,
+        "onecase": true,
+        "devel": true,
+        "node": true,
+        "nonstandard": true,
+        "nomen": false,
+        "onevar": true,
+        "esversion": 6
+    }
+}
