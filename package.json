@@ -1,7 +1,7 @@
 {
     "name": "napi-sample-app",
     "description": "Nymi API Sample App",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "license": "MIT",
     "keywords": ["napi", "nymi", "nymi api", "napi sample", "napi sample app"],
     "dependencies": {
@@ -9,7 +9,7 @@
     },
     "repository" : {
         "type" : "git",
-        "url" : "https://github.com/PaddeK/node-napi-sample-app.git"
+        "url" : "https://github.com/PaddeK/node-napi-sampleApp.git"
     },
     "engines" : {
         "node" : ">=6.9.1"
