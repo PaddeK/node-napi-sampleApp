@@ -1,6 +1,6 @@
 'use strict';
 
-const napi = require('napi-bindings');
+const napi = require('napi-bindings')(true);
 
 process.on('message', msg => {
     switch (msg.op) {
