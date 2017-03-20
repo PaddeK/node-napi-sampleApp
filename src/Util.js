@@ -61,8 +61,8 @@ class Util {
         return result;
     }
 
-    initNapi (dir, log, port, host) {
-    	this.napi.init(dir, log, port, host);
+    initNapi (dir, log, port, host, nymulator) {
+    	this.napi.init(dir, log, port, host, nymulator);
     }
 
 	getNapi () {

@@ -82,7 +82,7 @@ class NymiNodeApi {
         return instance;
     }
 
-    init (dir, log, port, host) {
+    init (dir, log, port, host, nymulator) {
         console.log('Initializing NAPI');
 
         cluster.setupMaster({exec: './src/Listener.js'});
@@ -90,7 +90,7 @@ class NymiNodeApi {
 
         if (!this.listener.isDead()) {
         	this.listener.on('message', this.callback);
-			this.listener.send({op: 'init', dir: dir, port: port, log: log, host: host});
+			this.listener.send({op: 'init', dir: dir, port: port, log: log, host: host, nymulator: nymulator});
 		}
 
         return this.listener;

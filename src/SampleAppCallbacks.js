@@ -5,7 +5,6 @@ const NymiNodeApi = require('./NymiNodeApi');
 class SampleAppCallbacks {
     constructor () {
         this.bands = [];
-        this.napi = NymiNodeApi.instance;
     }
 
     getBands () {
@@ -61,7 +60,7 @@ class SampleAppCallbacks {
 
     onProvision (newprov) {
         console.log('Successfully provisioned with pid: ' + newprov.getPid());
-        this.napi.stopProvisioning();
+        NymiNodeApi.instance.stopProvisioning();
 		this.bands.push(newprov);
     }
 
@@ -96,7 +95,7 @@ class SampleAppCallbacks {
 
     onNewProvision (newprov) {
         console.log('Successfully provisioned with pid: '  +  newprov.getPid());
-        this.napi.stopProvisioning();
+        NymiNodeApi.instance.stopProvisioning();
 		this.bands.push(newprov);
     }
 
@@ -136,6 +135,7 @@ class SampleAppCallbacks {
         } else {
             console.log('Provision revoked on Nymi Band with pid ' + pid);
         }
+        this.bands = this.bands.filter(prov => prov.getPid() !== pid);
     }
 
     onRandom (opResult, pid, prand, err) {

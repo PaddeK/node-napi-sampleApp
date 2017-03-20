@@ -13,8 +13,9 @@ rl.prompt();
 
 let util = new Util(rl);
 let port = 9088;
+let nymulator = true;   // use nymulator (true) or physical band (false)
 
-util.initNapi('.', 0, port, '127.0.0.1');
+util.initNapi('.', 0, port, '127.0.0.1', nymulator);
 
 console.log('-*-*-> NymiApi initialization succeeded. Enter `help` for list of supported commands. <-*-*-\n');
 console.log('Populating band table with any existing provisioned bands');
