@@ -1,7 +1,7 @@
 {
     "name": "napi-sample-app",
     "description": "Nymi API Sample App",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "license": "MIT",
     "keywords": ["napi", "nymi", "nymi api", "napi sample", "napi sample app"],
     "dependencies": {
