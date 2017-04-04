@@ -12,7 +12,7 @@ class NymiApiResponseParser {
 
     parse (jobj) {
         try {
-            jobj = JSON.parse(jobj.replace(/[^\x20-\x7e \x80-\xff]/g, ''));
+            jobj = JSON.parse(jobj.replace(/^(.*?\})([^}]*?)$/, '$1'));
         } catch (err) {
             this.handleNapiError(jobj);
             return;
