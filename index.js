@@ -25,6 +25,7 @@ let nea, handler,
 
 config.
     setName('sampleApp').
+    setSigAlgorithm(NeaHelpers.Const.SignatureAlgorithm.NIST256P).
     useNymulator(true).     // use nymulator (true) or physical band (false)
     setPort(9088).          // nymulator port usually 9088 / physical band 9089
     save();
@@ -108,7 +109,7 @@ nea.start().then(() => {
                 handler.sendToBandAt(bandIndex, Factory.getSymmetricKey)();
                 break;
             case 'setup-signature':
-                handler.sendToBandAt(bandIndex, Factory.signSetup)(NeaHelpers.Const.SignatureAlgorithm.NIST256P);
+                handler.sendToBandAt(bandIndex, Factory.signSetup)(config.getSigAlgorithm());
                 break;
             case 'get-signature':
                 handler.sendToBandAt(bandIndex, Factory.signMessage)(sha256('hello world'));

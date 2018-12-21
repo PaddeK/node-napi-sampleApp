@@ -1,21 +1,27 @@
 {
     "name": "napi-sample-app",
     "description": "Nymi API Sample App",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "license": "MIT",
-    "keywords": ["napi", "nymi", "nymi api", "napi sample", "napi sample app"],
+    "keywords": [
+        "napi",
+        "nymi",
+        "nymi api",
+        "napi sample",
+        "napi sample app"
+    ],
     "dependencies": {
-        "nea-helpers": "~0.1.0"
+        "nea-helpers": "~0.1.3"
     },
-    "repository" : {
-        "type" : "git",
-        "url" : "https://github.com/PaddeK/node-napi-sampleApp.git"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/PaddeK/node-napi-sampleApp.git"
     },
-    "engines" : {
-        "node" : ">=6.9.1"
+    "engines": {
+        "node": ">=6.9.1"
     },
-    "scripts" : {
-        "start" : "node index.js"
+    "scripts": {
+        "start": "node index.js"
     },
     "main": "src/SampleAppMain",
     "eslintConfig": {
