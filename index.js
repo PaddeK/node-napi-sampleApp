@@ -112,7 +112,7 @@ nea.start().then(() => {
                 handler.sendToBandAt(bandIndex, Factory.signSetup)(config.getSigAlgorithm());
                 break;
             case 'get-signature':
-                handler.sendToBandAt(bandIndex, Factory.signMessage)(sha256('hello world'));
+                handler.sendToBandAt(bandIndex, Factory.signMessage)(sha256('hello world2'));
                 break;
             case 'create-totp':
                 //hard coded in sample app, should be user provided.
